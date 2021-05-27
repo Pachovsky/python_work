@@ -57,3 +57,27 @@ for name, numbers in favorite_numbers.items():
 
 # cities
 
+cities = {
+    "naples": {
+        "country": "italy",
+        "population": 3085000,
+        "fact": "\nNaples, a city in southern Italy, sits on the Bay of Naples. \
+Nearby is Mount Vesuvius, the still-active volcano that destroyed nearby Roman town Pompeii. \
+Dating to the 2nd millennium B.C., Naples has centuries of important art and architecture. \
+The city's cathedral, the Duomo di San Gennaro, is filled with frescoes. \
+Other major landmarks include the lavish Royal Palace and Castel Nuovo, a 13th-century castle.",
+    },
+    "amsterdam": {
+        "country": "the netherlands",
+        "population": 11,
+        "fact": "",
+    },
+    "seatle": {
+        "country": "the united states of america",
+        "population": 11,
+        "fact": "",
+    },
+}
+
+for city, city_info in cities.items():
+    print("A fact about " + city.title() + " is: " + city_info["fact"])
