@@ -55,13 +55,14 @@ for name, numbers in favorite_numbers.items():
         for number in numbers:
             print("\t" + str(number))
 
+print("\n")
 # cities
 
 cities = {
     "naples": {
         "country": "italy",
         "population": 3085000,
-        "fact": "\n\tNaples, a city in southern Italy, sits on the Bay of Naples. \
+        "fact": "Naples, a city in southern Italy, sits on the Bay of Naples. \
 Nearby is Mount Vesuvius, the still-active volcano that destroyed nearby Roman town Pompeii. \
 Dating to the 2nd millennium B.C., Naples has centuries of important art and architecture. \
 The city's cathedral, the Duomo di San Gennaro, is filled with frescoes. \
@@ -70,7 +71,7 @@ Other major landmarks include the lavish Royal Palace and Castel Nuovo, a 13th-c
     "amsterdam": {
         "country": "the netherlands",
         "population": 821752,
-        "fact": "\n\tAmsterdam is the Netherlands’ capital, known for its artistic heritage, \
+        "fact": "Amsterdam is the Netherlands’ capital, known for its artistic heritage, \
 elaborate canal system and narrow houses with gabled facades, legacies of the city’s 17th-century Golden Age. \
 Its Museum District houses the Van Gogh Museum, works by Rembrandt and Vermeer at the Rijksmuseum, \
 and modern art at the Stedelijk. Cycling is key to the city’s character, and there are numerous bike paths.\n",
@@ -78,7 +79,7 @@ and modern art at the Stedelijk. Cycling is key to the city’s character, and t
     "seatle": {
         "country": "the united states of america",
         "population": 724305,
-        "fact": "\n\tSeattle, a city on Puget Sound in the Pacific Northwest, is surrounded by water, \
+        "fact": "Seattle, a city on Puget Sound in the Pacific Northwest, is surrounded by water, \
 mountains and evergreen forests, and contains thousands of acres of parkland. \
 Washington State’s largest city, it’s home to a large tech industry, with Microsoft \
 and Amazon headquartered in its metropolitan area. The futuristic Space Needle, a 1962 World’s Fair legacy, \
@@ -86,5 +87,9 @@ is its most iconic landmark.\n",
     },
 }
 
+print("Here is some information about my favorite cities: \n")
 for city, city_info in cities.items():
-    print("A fact about " + city.title() + " is: " + city_info["fact"])
+    print(city.title() + ": \n\t" + "Country: " + city_info["country"].title() + "." + "\n\tPopulation: " +
+    str(city_info["population"]) + "." + "\n\tFact: " + city_info["fact"].title())
+
+    
