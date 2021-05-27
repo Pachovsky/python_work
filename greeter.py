@@ -46,3 +46,14 @@ if seats > 8:
     print("You'll have to wait for a table.")
 else:
     print("Your table is ready.")
+
+print("\n")
+# 7-3 multiples of 10
+multiple = input("Please enter a number and I will tell you if it is a multiple of 10. ")
+multiple = int(multiple)
+
+if multiple % 10 == 0:
+    print(str(multiple) + " is a multiple of 10.")
+else:
+    print(str(multiple) + " is not a multiple of 10.")
+
