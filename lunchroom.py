@@ -1,7 +1,13 @@
-sandwich_orders = ["bacon sandwich", "beef sandwich", "cheese sandwich",
-"grilled cheese sandwich", "ham sandwich", "pork sandwich", "tuna sandwich"]
+sandwich_orders = ["bacon sandwich", "pastrami sandwich", "beef sandwich", 
+"cheese sandwich", "grilled cheese sandwich", "ham sandwich", "pastrami sanwich", 
+"pork sandwich", "tuna sandwich", "pastrami sandwich"]
 
 finished_sandwiches = []
+
+print("We are currently out of pastrami!\n")
+
+while "pastrami sandwich" in sandwich_orders:
+    sandwich_orders.remove("pastrami sandwich")
 
 while sandwich_orders:
     current_order = sandwich_orders.pop()
