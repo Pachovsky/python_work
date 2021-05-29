@@ -31,5 +31,6 @@ describe_pet("xavi")
 # different animal
 describe_pet(animal_type="fish", pet_name="nemo")
 
-# Equivalent Function Calls
- 
+# Avoiding Argument Errors
+
+describe_pet()
