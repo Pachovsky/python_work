@@ -8,7 +8,7 @@ def print_models(unprinted_designs, completed_models):
     while unprinted_designs:
         current_design = unprinted_designs.pop()
 
-        # simulate creating a 3D print from the design.
+        # Simulate creating a 3D print from the design.
         print("Printing model: " + current_design)
         completed_models.append(current_design)
 
@@ -21,9 +21,9 @@ def show_completed_models(completed_models):
 unprinted_designs = ["iphone case", "robot pendant", "dodecahedron"]
 completed_models = []
 
-# unprinted_designs list is copied with [:], and thus will not go empty!!!
+# print_models(unprinted_designs[:], ...) uses a copy of unprinted_designs.
 print_models(unprinted_designs[:], completed_models)
 show_completed_models(completed_models)
 
-# list still has items:
+# as you can see, unprinted_designs still has its items.
 print(unprinted_designs)
